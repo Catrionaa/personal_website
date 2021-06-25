@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel *.pug",
     "watch": "parcel watch *.pug",
-    "build": "parcel build *.pug --public-url ./"
+    "build": "parcel build *.pug"
   },
   "devDependencies": {
     "cssnano": "4.1.11",
