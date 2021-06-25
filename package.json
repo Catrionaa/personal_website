@@ -1,7 +1,6 @@
 {
   "name": "personal_website",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "parcel *.pug",
@@ -9,7 +8,10 @@
     "build": "parcel build *.pug"
   },
   "devDependencies": {
+    "@parcel/transformer-pug": "2.0.0-beta.2",
+    "@parcel/transformer-stylus": "2.0.0-beta.2",
     "cssnano": "4.1.11",
+    "parcel": "^2.0.0-beta.2",
     "postcss": "^8.2.15",
     "pug": "^3.0.2",
     "stylus": "^0.54.8"
