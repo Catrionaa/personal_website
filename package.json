@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel *.pug",
     "watch": "parcel watch *.pug",
-    "build": "yarn global add parcel-bundler parcel build *.pug"
+    "build": "parcel build *.pug"
   },
   "devDependencies": {
     "cssnano": "4.1.11",
