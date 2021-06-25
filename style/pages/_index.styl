@@ -1,0 +1,37 @@
+.page-section
+  align-content stretch
+  display grid
+  grid-gap 0.4rem
+  margin-top 1rem
+
+  @media (max-width: 992px)
+    padding-left 1rem
+    padding-right 1rem
+    grid-template-columns 1fr
+    grid-template-rows auto 1fr auto
+
+  @media (min-width: 993px)
+    padding-left 4rem
+    padding-right 4rem
+    grid-template-columns 1fr 1fr
+
+  height calc(100% - 2rem)
+  overflow-y scroll
+
+  >>> footer
+    align-self end
+    @media (min-width: 993px)
+      grid-column-start 1
+      grid-column-end 3
+
+.skills-list
+  display grid
+  grid-template-columns 1fr 1fr 1fr
+  @media (max-width: 992px)
+    text-align center
+
+  ul
+    list-style none
+    padding 0
+    set-font-size(23px)
+

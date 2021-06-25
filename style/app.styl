@@ -1,0 +1,23 @@
+@import "_mixins.styl"
+@import "_variables.styl"
+@import "_fonts.styl"
+
+@import "components/*/*.styl"
+@import "pages/*.styl"
+
+html, body
+  scroll-behavior smooth
+  margin 0
+  background-image url("./../assets/img/email-pattern.png")
+  font-family OswaldFont
+  max-height calc(100% - 2rem) !important
+  height calc(100% - 2.1rem) !important
+  max-width calc(100% - 1rem) !important
+
+.frame
+    background white
+    border 1px solid black
+    position relative
+    margin 2rem 1rem
+    height 100%
+    width 100%

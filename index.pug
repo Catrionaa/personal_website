@@ -1,0 +1,26 @@
+head
+    meta(charset='UTF-8')
+    title Title
+    body
+        .frame
+            include ./components/globals/menu.pug
+            section.page-section
+                include ./components/index/Blurb
+                include ./components/index/Images
+                .skills-list
+                    ul
+                        li Html (Pug)
+                        li Css (Stylus)
+                        li Js (ES6+)
+                    ul
+                        li Typescript
+                        li Vue2
+                        li Git
+                    ul
+                        li Photoshop
+                        li Illustrator
+                        li Sketch
+                include ./components/globals/footer.pug
+            script(type="text/javascript" src="./index.ts")
+
+

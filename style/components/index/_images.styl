@@ -1,0 +1,40 @@
+.images
+  @media (max-width: 992px)
+    margin 0 15% 2%
+  @media (min-width: 993px)
+    margin 5% 5% 0 15%
+    grid-column-start 2
+    grid-row-start 1
+    grid-row-end 3
+  position relative
+  align-self center
+
+  .img-holder, .img-holder::after
+    border-radius 50%
+    position relative
+
+  .img-holder
+    width 100%
+    margin-left auto
+    margin-right auto
+    padding-top 100%
+    background-size cover
+    background-image url("./../assets/img/code.jpg")
+
+
+    &::after
+      content ''
+      position absolute
+      @media (max-width: 992px)
+        bottom -2%
+        width 60%
+        padding-top 60%
+      @media (min-width: 993px)
+        bottom -7%
+        width 60%
+        padding-top 60%
+      margin-right auto
+      background-image url("./../assets/img/me.jpg")
+      background-size 154%
+      background-position-x right
+
